@@ -21,4 +21,4 @@ Add `t()` for upside-down
      
 ### Subset data.frame
 
-     newdata <- mydata[ which(mydata$gender=='F' & mydata$age > 65), ]
+     newdat <- dat[ which(dat$XX=='X' & dat$YY > Y), ]
