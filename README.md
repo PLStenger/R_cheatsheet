@@ -22,3 +22,12 @@ Add `t()` for upside-down
 ### Subset data.frame
 
      newdat <- dat[ which(dat$XX=='X' & dat$YY > Y), ]
+
+
+### Turn all integer in a data.frame into numeric
+
+     dat[] <- lapply(dat, function(x) {
+       if(is.integer(x)) as.numeric(as.character(x)) else x
+     })
+     
+     
