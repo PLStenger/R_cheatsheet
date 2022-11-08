@@ -30,4 +30,6 @@ Add `t()` for upside-down
        if(is.integer(x)) as.numeric(as.character(x)) else x
      })
      
-     
+### Order discrete x scale by frequency/value 
+
+     dat$Condition <- factor(dat$Condition, levels=c("SF", "LF", "F"))
