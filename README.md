@@ -33,3 +33,17 @@ Add `t()` for upside-down
 ### Order discrete x scale by frequency/value 
 
      dat$Condition <- factor(dat$Condition, levels=c("SF", "LF", "F"))
+     
+     
+     
+     
+### summarise dat
+     dat_summarise <- dat %>% 
+       group_by(phylum, index) %>% 
+       summarise(value = sum(value))
+
+     head(dat_summarise)
+
+### spread dat
+
+     dat_summarise %>% spread(species, value)
