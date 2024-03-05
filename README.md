@@ -24,6 +24,14 @@ Add `t()` for upside-down
      newdat <- dat[ which(dat$XX=='X' & dat$YY > Y), ]
 
 
+### Delete row in data.frame according condition
+
+     dat <- dat[ which(dat$Phylum!='Rhabditophora'), ]
+  
+### Change pattern in data.frame
+
+     dat$Phylum <- gsub(' Dinoflagellata', 'Dinoflagellata', dat$Phylum)
+
 ### Turn all integer in a data.frame into numeric
 
      dat[] <- lapply(dat, function(x) {
