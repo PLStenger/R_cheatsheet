@@ -19,6 +19,10 @@
 Add `t()` for upside-down      
      
      
+### ggplot without legend
+
+     + theme(legend.position="none")
+
 ### Subset data.frame
 
      newdat <- dat[ which(dat$XX=='X' & dat$YY > Y), ]
