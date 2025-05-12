@@ -23,6 +23,12 @@ Add `t()` for upside-down
 
      + theme(legend.position="none")
 
+### ggplot no X axis labels, title and ticks
+
+     + theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+
 ### Subset data.frame
 
      newdat <- dat[ which(dat$XX=='X' & dat$YY > Y), ]
