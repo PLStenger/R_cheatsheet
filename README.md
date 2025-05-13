@@ -29,6 +29,11 @@ Add `t()` for upside-down
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank())
 
+### ggplot split legend in two column
+
+     + guides(fill=guide_legend(ncol=2))
+     
+
 ### Subset data.frame
 
      newdat <- dat[ which(dat$XX=='X' & dat$YY > Y), ]
