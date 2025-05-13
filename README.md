@@ -29,7 +29,7 @@ Add `t()` for upside-down
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank())
 
-### ggplot split legend in two column
+### ggplot split legend in two columns
 
      + guides(fill=guide_legend(ncol=2))
      
